@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the preprint."
+title: "Within-Building Dependence, Target Leakage and Data Vintages in Building Energy Prediction from Public Benchmarking Data"
+authors:
+  - family-names: "WOLIE"
+    given-names: "Khoty"
+    affiliation: "Independent researcher"
+    email: "khotywolie@gmail.com"
+date-released: "2026-10-29"
+version: "1.0.0"
+license: "MIT"
+repository-code: "https://github.com/Khoty-WOLIE/building-energy-benchmarking-evaluation"
+keywords:
+  - building energy
+  - benchmarking data
+  - machine learning evaluation
+  - data leakage
+  - data vintages

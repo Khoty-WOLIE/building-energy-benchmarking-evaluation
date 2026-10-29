@@ -1,0 +1,13 @@
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Grouped CV (S2)} & \multicolumn{2}{c}{Unseen + future (S4)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Information tier & Ridge & Gr.\ boosting & Ridge & Gr.\ boosting \\
+\midrule
+T0 (structural) & 0.441 & 0.450 & 0.452 & 0.461 \\
+T0 + ENERGY STAR & 0.328 & 0.323 & 0.327 & 0.332 \\
+T1 (T0 + baseline year) & 0.271 & 0.282 & 0.307 & 0.316 \\
+T1 + ENERGY STAR & 0.238 & 0.242 & 0.268 & 0.275 \\
+T0 + same-year EUI (leakage ceiling) & 0.373 & 0.077 & 0.384 & 0.087 \\
+\bottomrule
+\end{tabular}

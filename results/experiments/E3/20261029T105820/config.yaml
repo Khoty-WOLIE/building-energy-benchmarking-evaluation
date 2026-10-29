@@ -1,0 +1,62 @@
+# Article 01 - protocol v1.0 (machine-readable). Mirrors experiments/02_protocole_experimental_v1.0.md.
+protocol_version: "1.0"
+status: frozen              # 2026-10-29 (A01-D17)
+seed: 20261029
+
+data:
+  consolidated:
+    path: data/raw/seattle_benchmarking_2015_present_teqw-tu6e.csv
+    sha256: d1a8227bf9c7c82aea8279a67405add617271852a985d96bb6e4ac9070e8250f
+  original_2016:
+    path: data/raw/2016_Building_Energy_Benchmarking.csv
+    sha256: 8bcb3dc96494f7c02c2e5b888d71ea4ad451b22657a7243d37de3573d8923a9d
+  population: non_residential_compliant_not_demolished_target_positive   # src/a01/data.py::apply_population
+  expected_rows: 15621
+  expected_buildings: 1667
+  covid_years: [2020, 2021]
+  rare_type_min_buildings: 30
+
+targets:
+  primary: log_site_energy_kbtu
+  secondary: log_total_ghg_emissions
+  sensitivity: log_site_energy_wn_kbtu
+
+tiers:
+  T0: [log_gfa_total, log_gfa_buildings, parking_share, NumberofFloors, NumberofBuildings, YearBuilt,
+       Latitude, Longitude, largest_use_share, BuildingType, property_type, Neighborhood]
+  T1_extra: [ref_share_electricity, ref_share_gas, ref_share_steam, ref_log_energy, ref_gap_years]
+  T2_leakage_only: [ENERGYSTARScore, "SiteEUI(kBtu/sf)", "SourceEUI(kBtu/sf)", "SiteEUIWN(kBtu/sf)",
+                    "SourceEUIWN(kBtu/sf)", GHGEmissionsIntensity, "Electricity(kBtu)", "NaturalGas(kBtu)",
+                    "SteamUse(kBtu)"]
+  t1_reference: first_observed_year_strictly_before_target_and_le_cutoff
+
+splits:
+  S1_row_random: {k: 5, repeats: 5, inner_cv: row_random_3fold}
+  S2_grouped: {k: 5, repeats: 5, inner_cv: grouped_3fold}
+  S3_forward_temporal: {cutoffs: [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], horizons: [1, 2, 3], inner_cv: grouped_3fold}
+  S4_grouped_temporal: {cutoffs: [2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], horizons: [1, 2, 3], k: 5, inner_cv: grouped_3fold}
+
+models:
+  M0_median_by_type: {}
+  M1_persistence: {tier: T1_only}
+  M2_ridge: {alpha: [0.01, 0.1, 1, 10, 100]}
+  M3_random_forest: {n_estimators: 500, max_features: [0.33, 0.66], min_samples_leaf: [1, 5]}
+  M4_hist_gradient_boosting: {learning_rate: [0.05, 0.1], max_leaf_nodes: [15, 31], max_iter: 500, early_stopping: true}
+
+metrics:
+  primary: mae_log
+  secondary: [rmse_log, r2_log, mdape_original, mae_kbtu_duan_smearing]
+
+statistics:
+  bootstrap: {unit: building, B: 2000, ci: 0.95}
+  multiplicity: holm
+  practical_threshold_mae_log: 0.02
+  primary_contrasts:
+    P1: "S2 - S1 | M4 | T0"
+    P2: "S2 - S1 | M4 | T1"
+    P3: "S3 h3 - h1 | M4 | T0"
+    P4: "M4 - M2 | S4 | T0"
+    P5: "T0+ES - T0 | S2 | M4 | rows with ES"
+    P6: "original - consolidated 2016 | GHG | S2 | M4 | T0_common | matched buildings"
+    P7: "original - consolidated 2016 | energy | S2 | M4 | T0_common | matched buildings"
+    P8: "as-of attributes - snapshot attributes | energy | S2 | M4 | T0_common"

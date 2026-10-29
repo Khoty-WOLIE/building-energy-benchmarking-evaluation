@@ -1,0 +1,1 @@
+share_of_buildings_with_unique_T0_vector=1.0000

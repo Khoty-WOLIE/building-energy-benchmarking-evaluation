@@ -1,0 +1,383 @@
+{
+  "source_file": "data/raw/seattle_benchmarking_2015_present_teqw-tu6e.csv",
+  "n_rows": 38309,
+  "n_columns": 46,
+  "columns": [
+    "OSEBuildingID",
+    "DataYear",
+    "BuildingName",
+    "BuildingType",
+    "TaxParcelIdentificationNumber",
+    "Address",
+    "City",
+    "State",
+    "ZipCode",
+    "Latitude",
+    "Longitude",
+    "Neighborhood",
+    "CouncilDistrictCode",
+    "YearBuilt",
+    "NumberofFloors",
+    "NumberofBuildings",
+    "PropertyGFATotal",
+    "PropertyGFABuildings",
+    "PropertyGFAParking",
+    "SelfReportGFATotal",
+    "SelfReportGFABuildings",
+    "SelfReportParking",
+    "ENERGYSTARScore",
+    "SiteEUIWN(kBtu/sf)",
+    "SiteEUI(kBtu/sf)",
+    "SiteEnergyUse(kBtu)",
+    "SiteEnergyUseWN(kBtu)",
+    "SourceEUIWN(kBtu/sf)",
+    "SourceEUI(kBtu/sf)",
+    "EPAPropertyType",
+    "LargestPropertyUseType",
+    "LargestPropertyUseTypeGFA",
+    "SecondLargestPropertyUseType",
+    "SecondLargestPropertyUseTypeGFA",
+    "ThirdLargestPropertyUseType",
+    "ThirdLargestPropertyUseTypeGFA",
+    "Electricity(kWh)",
+    "SteamUse(kBtu)",
+    "NaturalGas(therms)",
+    "ComplianceStatus",
+    "ComplianceIssue",
+    "Electricity(kBtu)",
+    "NaturalGas(kBtu)",
+    "TotalGHGEmissions",
+    "GHGEmissionsIntensity",
+    "Demolished"
+  ],
+  "rows_per_year": {
+    "2015": 3175,
+    "2016": 3253,
+    "2017": 3310,
+    "2018": 3381,
+    "2019": 3456,
+    "2020": 3530,
+    "2021": 3578,
+    "2022": 3617,
+    "2023": 3687,
+    "2024": 3712,
+    "2025": 3610
+  },
+  "duplicate_building_year_pairs": 0,
+  "unique_buildings_all": 3871,
+  "building_type_by_year": {
+    "2015": {
+      "Hospital": 52,
+      "Multifamily HR (10+)": 110,
+      "Multifamily LR (1-4)": 1005,
+      "Multifamily MR (5-9)": 553,
+      "NonResidential": 1309,
+      "School": 126,
+      "University": 20
+    },
+    "2016": {
+      "Hospital": 53,
+      "Multifamily HR (10+)": 114,
+      "Multifamily LR (1-4)": 1020,
+      "Multifamily MR (5-9)": 589,
+      "NonResidential": 1328,
+      "School": 126,
+      "University": 23
+    },
+    "2017": {
+      "Hospital": 53,
+      "Multifamily HR (10+)": 115,
+      "Multifamily LR (1-4)": 1036,
+      "Multifamily MR (5-9)": 618,
+      "NonResidential": 1335,
+      "School": 128,
+      "University": 25
+    },
+    "2018": {
+      "Hospital": 52,
+      "Multifamily HR (10+)": 121,
+      "Multifamily LR (1-4)": 1044,
+      "Multifamily MR (5-9)": 653,
+      "NonResidential": 1355,
+      "School": 129,
+      "University": 27
+    },
+    "2019": {
+      "Hospital": 53,
+      "Multifamily HR (10+)": 128,
+      "Multifamily LR (1-4)": 1063,
+      "Multifamily MR (5-9)": 686,
+      "NonResidential": 1364,
+      "School": 133,
+      "University": 29
+    },
+    "2020": {
+      "Hospital": 52,
+      "Multifamily HR (10+)": 132,
+      "Multifamily LR (1-4)": 1078,
+      "Multifamily MR (5-9)": 726,
+      "NonResidential": 1373,
+      "School": 137,
+      "University": 32
+    },
+    "2021": {
+      "Hospital": 53,
+      "Multifamily HR (10+)": 134,
+      "Multifamily LR (1-4)": 1086,
+      "Multifamily MR (5-9)": 753,
+      "NonResidential": 1379,
+      "School": 140,
+      "University": 33
+    },
+    "2022": {
+      "Hospital": 54,
+      "Multifamily HR (10+)": 137,
+      "Multifamily LR (1-4)": 1085,
+      "Multifamily MR (5-9)": 775,
+      "NonResidential": 1390,
+      "School": 141,
+      "University": 35
+    },
+    "2023": {
+      "Hospital": 55,
+      "Multifamily HR (10+)": 145,
+      "Multifamily LR (1-4)": 1093,
+      "Multifamily MR (5-9)": 811,
+      "NonResidential": 1403,
+      "School": 144,
+      "University": 36
+    },
+    "2024": {
+      "Hospital": 56,
+      "Multifamily HR (10+)": 151,
+      "Multifamily LR (1-4)": 1082,
+      "Multifamily MR (5-9)": 832,
+      "NonResidential": 1412,
+      "School": 143,
+      "University": 36
+    },
+    "2025": {
+      "Hospital": 49,
+      "Multifamily HR (10+)": 149,
+      "Multifamily LR (1-4)": 1055,
+      "Multifamily MR (5-9)": 838,
+      "NonResidential": 1343,
+      "School": 143,
+      "University": 33
+    }
+  },
+  "nonresidential_rows_per_year": {
+    "2015": 1507,
+    "2016": 1530,
+    "2017": 1541,
+    "2018": 1563,
+    "2019": 1579,
+    "2020": 1594,
+    "2021": 1605,
+    "2022": 1620,
+    "2023": 1638,
+    "2024": 1647,
+    "2025": 1568
+  },
+  "nonresidential_unique_buildings": 1744,
+  "nonresidential_years_per_building_distribution": {
+    "1": 22,
+    "2": 25,
+    "3": 32,
+    "4": 35,
+    "5": 38,
+    "6": 42,
+    "7": 35,
+    "8": 35,
+    "9": 29,
+    "10": 105,
+    "11": 1346
+  },
+  "nonres_energystar_missing_rate_by_year": {
+    "2015": 0.3265,
+    "2016": 0.3386,
+    "2017": 0.3394,
+    "2018": 0.3359,
+    "2019": 0.3433,
+    "2020": 0.3519,
+    "2021": 0.385,
+    "2022": 0.4062,
+    "2023": 0.3907,
+    "2024": 0.4026,
+    "2025": 0.4145
+  },
+  "nonres_SiteEnergyUse(kBtu)_missing_rate_by_year": {
+    "2015": 0.0153,
+    "2016": 0.017,
+    "2017": 0.0117,
+    "2018": 0.0154,
+    "2019": 0.0101,
+    "2020": 0.0188,
+    "2021": 0.0897,
+    "2022": 0.108,
+    "2023": 0.0617,
+    "2024": 0.054,
+    "2025": 0.0466
+  },
+  "nonres_SiteEnergyUse(kBtu)_nonpositive_count_by_year": {
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+  },
+  "nonres_SiteEnergyUse(kBtu)_median_by_year": {
+    "2015": 2518997.0,
+    "2016": 2644280.5,
+    "2017": 2830527.0,
+    "2018": 2730737.0,
+    "2019": 2767226.0,
+    "2020": 2448307.5,
+    "2021": 2813976.0,
+    "2022": 2982469.0,
+    "2023": 2793905.0,
+    "2024": 2701035.0,
+    "2025": 2632624.0
+  },
+  "nonres_TotalGHGEmissions_missing_rate_by_year": {
+    "2015": 0.01,
+    "2016": 0.0137,
+    "2017": 0.0097,
+    "2018": 0.0051,
+    "2019": 0.0063,
+    "2020": 0.0119,
+    "2021": 0.0822,
+    "2022": 0.0407,
+    "2023": 0.0281,
+    "2024": 0.048,
+    "2025": 0.0906
+  },
+  "nonres_TotalGHGEmissions_nonpositive_count_by_year": {
+    "2015": 0,
+    "2016": 0,
+    "2017": 0,
+    "2018": 0,
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+  },
+  "nonres_TotalGHGEmissions_median_by_year": {
+    "2015": 45.95,
+    "2016": 47.7,
+    "2017": 56.5,
+    "2018": 51.9,
+    "2019": 55.5,
+    "2020": 46.9,
+    "2021": 57.1,
+    "2022": 52.3,
+    "2023": 51.8,
+    "2024": 52.05,
+    "2025": 50.69
+  },
+  "compliance_status_by_year": {
+    "2015": {
+      "Compliant": 3156,
+      "Not Compliant": 19
+    },
+    "2016": {
+      "Compliant": 3090,
+      "Not Compliant": 163
+    },
+    "2017": {
+      "Compliant": 3049,
+      "Not Compliant": 261
+    },
+    "2018": {
+      "Compliant": 2997,
+      "Not Compliant": 384
+    },
+    "2019": {
+      "Compliant": 3179,
+      "Not Compliant": 277
+    },
+    "2020": {
+      "Compliant": 3364,
+      "Not Compliant": 166
+    },
+    "2021": {
+      "Compliant": 3387,
+      "Not Compliant": 191
+    },
+    "2022": {
+      "Compliant": 3113,
+      "Not Compliant": 504
+    },
+    "2023": {
+      "Compliant": 3544,
+      "Not Compliant": 143
+    },
+    "2024": {
+      "Compliant": 3575,
+      "Not Compliant": 137
+    },
+    "2025": {
+      "Compliant": 3342,
+      "Not Compliant": 268
+    }
+  },
+  "epa_property_type_n_categories": 72,
+  "nonres_share_of_multi_year_buildings_with_changing_attribute": {
+    "PropertyGFATotal": 0.0,
+    "YearBuilt": 0.0046,
+    "NumberofFloors": 0.0,
+    "EPAPropertyType": 0.2143,
+    "BuildingType": 0.0
+  },
+  "nonres_log_site_energy_year_over_year_correlation": {
+    "2015->2016": {
+      "n": 1469,
+      "pearson_r_log": 0.9648
+    },
+    "2016->2017": {
+      "n": 1496,
+      "pearson_r_log": 0.9808
+    },
+    "2017->2018": {
+      "n": 1493,
+      "pearson_r_log": 0.977
+    },
+    "2018->2019": {
+      "n": 1517,
+      "pearson_r_log": 0.9643
+    },
+    "2019->2020": {
+      "n": 1527,
+      "pearson_r_log": 0.9725
+    },
+    "2020->2021": {
+      "n": 1425,
+      "pearson_r_log": 0.9424
+    },
+    "2021->2022": {
+      "n": 1357,
+      "pearson_r_log": 0.9523
+    },
+    "2022->2023": {
+      "n": 1417,
+      "pearson_r_log": 0.9782
+    },
+    "2023->2024": {
+      "n": 1486,
+      "pearson_r_log": 0.9754
+    },
+    "2024->2025": {
+      "n": 1443,
+      "pearson_r_log": 0.9803
+    }
+  }
+}

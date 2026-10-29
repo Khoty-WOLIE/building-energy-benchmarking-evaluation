@@ -1,0 +1,41 @@
+{
+  "snapshot_sha256": "d1a8227bf9c7c82aea8279a67405add617271852a985d96bb6e4ac9070e8250f",
+  "analysis_rows": 15621,
+  "analysis_buildings": 1667,
+  "rows_per_year": {
+    "2015": 1417,
+    "2016": 1358,
+    "2017": 1351,
+    "2018": 1359,
+    "2019": 1432,
+    "2020": 1501,
+    "2021": 1405,
+    "2022": 1336,
+    "2023": 1512,
+    "2024": 1521,
+    "2025": 1429
+  },
+  "property_types_kept": 16,
+  "rows_with_t1_reference": 13954,
+  "share_rows_with_t1_reference": 0.8933,
+  "energy_star_missing_rate": 0.3366,
+  "share_multi_year_buildings_with_changing_attribute": {
+    "PropertyGFATotal": 0.0,
+    "NumberofFloors": 0.0,
+    "YearBuilt": 0.0012,
+    "property_type": 0.197,
+    "LargestPropertyUseTypeGFA": 0.5873
+  },
+  "buildings_2016_matched_to_original_release": 1343,
+  "n_split_instances": {
+    "S1_row_random": 5,
+    "S2_grouped": 5,
+    "S3_forward_temporal": 21,
+    "S4_grouped_temporal": 105
+  },
+  "s3_test_rows_by_horizon": {
+    "1": 11495,
+    "2": 10136,
+    "3": 8704
+  }
+}

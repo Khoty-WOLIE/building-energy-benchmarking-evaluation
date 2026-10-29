@@ -1,0 +1,5 @@
+setting,model,r2_log_mean,r2_log_sd,mae_log_mean,source
+"Original notebook: one 70/30 random split, top-tail truncation, 1452 buildings",LinearRegression,0.5345,,,results/phase01_reproduction.json (reproduced exactly)
+"Protocol v1.0 on the original 2016 release: grouped 5x5 CV, no truncation, 1343 matched buildings",M2_ridge,0.6682350910545034,0.044619941798030166,0.5453588840077161,results\experiments\E6\20261029T102612
+"Protocol v1.0 on the original 2016 release: grouped 5x5 CV, no truncation, 1343 matched buildings",M3_random_forest,0.6713027778093312,0.04245286313014679,0.5477950744224866,results\experiments\E6\20261029T102612
+"Protocol v1.0 on the original 2016 release: grouped 5x5 CV, no truncation, 1343 matched buildings",M4_hist_gradient_boosting,0.6702585582525757,0.041585430174575395,0.5510466792843944,results\experiments\E6\20261029T102612

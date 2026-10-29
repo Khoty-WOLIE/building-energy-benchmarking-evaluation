@@ -1,0 +1,37 @@
+{
+  "matched_buildings": 1343,
+  "buildings_with_positive_energy_in_both": 1343,
+  "buildings_with_positive_ghg_in_both": 1341,
+  "ranking_stability": {
+    "energy": {
+      "spearman_rank_corr": 1.0,
+      "order_orig": [
+        "M2_ridge",
+        "M3_random_forest",
+        "M4_hist_gradient_boosting",
+        "M0_median_by_type"
+      ],
+      "order_cons": [
+        "M2_ridge",
+        "M3_random_forest",
+        "M4_hist_gradient_boosting",
+        "M0_median_by_type"
+      ]
+    },
+    "ghg": {
+      "spearman_rank_corr": 1.0,
+      "order_orig": [
+        "M3_random_forest",
+        "M2_ridge",
+        "M4_hist_gradient_boosting",
+        "M0_median_by_type"
+      ],
+      "order_cons": [
+        "M3_random_forest",
+        "M2_ridge",
+        "M4_hist_gradient_boosting",
+        "M0_median_by_type"
+      ]
+    }
+  }
+}

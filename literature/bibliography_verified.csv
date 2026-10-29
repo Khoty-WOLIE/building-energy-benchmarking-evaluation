@@ -1,0 +1,35 @@
+key,category,year,short_reference,identifier,verification_status,reading_level,role_in_article01
+duan2026ghgbench,closest prior work,2026,"Duan et al., GHGbench, arXiv",arXiv:2605.13743,VERIFIED (arXiv API),full text keyword-targeted,"Main point of comparison: grouped/random/temporal splits already exist; ES labelled 'Clean'; Seattle consolidated release used without revision analysis"
+yap2025revealing,Seattle data,2025,"Yap, Wu, Miller, Biljecki, Nature Sustainability",10.1038/s41893-025-01615-8,VERIFIED (Crossref),full text (authors' PDF),"Uses teqw-tu6e with random 70/15/15 split; example of release-agnostic use"
+worthy2025eo,Seattle data,2025,"Worthy, Ashayeri, Abbasabadi, Sustainable Cities and Society 130",10.1016/j.scs.2025.106544,VERIFIED (Crossref),abstract only,Feature enrichment (microclimate); complementary
+li2024generalized,multi-city benchmarking,2024,"Li et al., Developments in the Built Environment 17",10.1016/j.dibe.2024.100320,VERIFIED (Crossref),abstract,Cross-climate-zone generalisation (12 cities 11 years)
+zhang2023xai,Seattle data,2023,"Zhang, Teoh, Wu, Chen, Zhang, Energy 262",10.1016/j.energy.2022.125468,VERIFIED (Crossref),abstract (index records),Closest to original project (LightGBM+SHAP); feature availability to verify
+zhang2023gtwr,Seattle data,2023,"Zhang, Teoh, Zhang, Energy 269",10.1016/j.energy.2023.126747,VERIFIED (Crossref),secondary summary,Explanatory spatio-temporal drivers
+pan2020data,Seattle data,2020,"Pan & Zhang, Applied Energy 268",10.1016/j.apenergy.2020.114965,VERIFIED (Crossref),abstract,Random 5-fold CV on Seattle (R2 0.897) - example of optimistic protocol to contrast
+arjunan2020energystarpp,ENERGY STAR / benchmarking,2020,"Arjunan, Poolla, Miller, Applied Energy 276 (arXiv 1910.14563)",10.1016/j.apenergy.2020.115413,VERIFIED (Crossref + arXiv),full text (arXiv),ES methodology and ML alternatives; Seattle subset
+arjunan2019energystarpp_arxiv,ENERGY STAR / benchmarking,2019,EnergyStar++ preprint,arXiv:1910.14563,VERIFIED (arXiv API),full text,Preprint version (cite journal version)
+arjunan2022beem,benchmarking,2022,"Arjunan et al., BEEM, Energy and Buildings",10.1016/j.enbuild.2022.111869,VERIFIED (Crossref title match),abstract,Data-driven benchmarking from disclosure data (Singapore)
+kontokosta2017citywide,city-scale prediction,2017,"Kontokosta & Tull, Applied Energy 197",10.1016/j.apenergy.2017.04.005,VERIFIED (Crossref),secondary summary,Use case: predicting energy of non-reporting buildings (motivates unseen-building evaluation)
+papadopoulos2019grading,benchmarking,2019,"Papadopoulos & Kontokosta, Applied Energy 233-234",10.1016/j.apenergy.2018.10.053,VERIFIED (Crossref),abstract,ML grading from city benchmarking data (NYC)
+papadopoulos2018pattern,benchmarking panel,2018,"Papadopoulos, Bonczak, Kontokosta, Applied Energy",10.1016/j.apenergy.2018.03.079,VERIFIED (Crossref title match),abstract,Multi-year benchmarking panel (NYC 2011-2016)
+hsu2014selfreported,data quality,2014,"Hsu, Building Research & Information",10.1080/09613218.2014.887612,VERIFIED (Crossref),abstract,Quality of self-reported benchmarking data; ES critique
+scofield2014energystar,ENERGY STAR critique,2014,"Scofield, ACEEE Summer Study",https://www.aceee.org/files/proceedings/2014/data/papers/3-725.pdf,VERIFIED_GREY (URL checked),abstract,ES uncertainty (~35 points)
+epa2021energystarscore,ENERGY STAR method,2021,"U.S. EPA, ENERGY STAR Score Technical Reference (Apr 2021)",https://portfoliomanager.energystar.gov/pdf/reference/ENERGY%20STAR%20Score.pdf,VERIFIED_GREY (PDF read),full text,Primary evidence that ES = lookup(actual source EUI / predicted source EUI)
+robinson2017commercial,building energy ML,2017,"Robinson et al., Applied Energy 208",10.1016/j.apenergy.2017.09.060,VERIFIED (Crossref),metadata,Background (CBECS ML)
+amasyali2018review,review,2018,"Amasyali & El-Gohary, RSER 81",10.1016/j.rser.2017.04.095,VERIFIED (Crossref),metadata,Background review
+konhauser2022ensemble,building energy ML,2022,"Konhauser et al., Energy and Buildings",10.1016/j.enbuild.2022.112242,VERIFIED (Crossref title match),abstract,Subgroup robustness analysis (supports E4)
+miller2020bdg2,datasets,2020,"Miller et al., Scientific Data 7:368",10.1038/s41597-020-00712-x,VERIFIED (Crossref),metadata,Open building data benchmark context
+miller2020gepiii,datasets,2020,"Miller et al., Sci. Tech. Built Env. 26(10)",10.1080/23744731.2020.1795514,VERIFIED (Crossref),metadata,Benchmark competition context
+emami2023buildingsbench,datasets,2023,"Emami, Sahu, Graf, BuildingsBench (NeurIPS D&B)",arXiv:2307.00142,VERIFIED (arXiv API),metadata,Benchmark context (load forecasting)
+kapoor2023leakage,methodology,2023,"Kapoor & Narayanan, Patterns",10.1016/j.patter.2023.100804,VERIFIED (Crossref),secondary + metadata,Leakage taxonomy (features not legitimately available at prediction time)
+kaufman2012leakage,methodology,2012,"Kaufman et al., ACM TKDD",10.1145/2382577.2382579,VERIFIED (Crossref),metadata,Foundational leakage definition
+roth2026leakagetypes,methodology,2026,"Roth, Which Leakage Types Matter?, arXiv",arXiv:2604.04199,VERIFIED (arXiv API),abstract,Preprocessing (scaler) leakage negligible - consistent with Phase 01 finding
+roberts2017cv,methodology,2017,"Roberts et al., Ecography 40",10.1111/ecog.02881,VERIFIED (Crossref),metadata,Blocked CV for structured (grouped/temporal) data
+bergmeir2012cvts,methodology,2012,"Bergmeir & Benitez, Information Sciences 191",10.1016/j.ins.2011.12.028,VERIFIED (Crossref),metadata,Temporal validation design
+varma2006bias,methodology,2006,"Varma & Simon, BMC Bioinformatics 7:91",10.1186/1471-2105-7-91,VERIFIED (Crossref),metadata,Nested CV for unbiased tuning
+duan1983smearing,statistics,1983,"Duan, JASA 78",10.1080/01621459.1983.10478017,VERIFIED (Crossref),metadata,Retransformation bias for log targets
+field2007clustered,statistics,2007,"Field & Welsh, JRSS-B 69",10.1111/j.1467-9868.2007.00593.x,VERIFIED (Crossref),metadata,Cluster bootstrap
+croushore2001realtime,data vintages,2001,"Croushore & Stark, Journal of Econometrics 105",10.1016/S0304-4076(01)00072-0,VERIFIED (Crossref),metadata,Conceptual anchor for vintage-aware evaluation (C3)
+gebru2021datasheets,data documentation,2021,"Gebru et al., Communications of the ACM 64(12)",10.1145/3458723,VERIFIED (Crossref),metadata,Dataset documentation / versioning practice
+seattle2026benchmarking,data source,2026,"City of Seattle OSE, teqw-tu6e",https://data.seattle.gov/Built-Environment/Building-Energy-Benchmarking-Data-2015-Present/teqw-tu6e,VERIFIED_GREY (API),n/a,Primary data (snapshot SHA-256 d1a8227b...)
+seattle2016benchmarking_original,data source,2017,"City of Seattle OSE, 2016 original release (2bpz-gwpy, removed)",OpenClassrooms S3 copy,VERIFIED_GREY (5 statistics match notebook),n/a,Vintage comparison (E6)

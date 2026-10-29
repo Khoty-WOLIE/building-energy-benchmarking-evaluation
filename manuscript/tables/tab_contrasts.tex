@@ -1,0 +1,14 @@
+\begin{tabular}{llrcrl}
+\toprule
+ & Contrast (difference in MAE on the log scale) & Estimate & 95\% CI & $p_{\mathrm{Holm}}$ & Verdict \\
+\midrule
+P1 & Building-grouped minus row-random CV (T0) & $+0.299$ & [$+0.281$, $+0.316$] & $<0.005$ & substantial \\
+P2 & Building-grouped minus row-random CV (T1) & $+0.120$ & [$+0.111$, $+0.129$] & $<0.005$ & substantial \\
+P3 & Forward temporal, horizon 3 minus horizon 1 (T0) & $+0.050$ & [$+0.044$, $+0.056$] & $<0.005$ & substantial \\
+P4 & Gradient boosting minus Ridge, unseen buildings and future years (T0) & $+0.016$ & [$+0.004$, $+0.029$] & 0.048 & significant, below threshold \\
+P5 & T0 with ENERGY STAR minus T0, grouped CV & $-0.127$ & [$-0.140$, $-0.113$] & $<0.005$ & substantial \\
+P6 & Original minus consolidated 2016 release, GHG target & $-0.029$ & [$-0.043$, $-0.015$] & $<0.005$ & substantial \\
+P7 & Original minus consolidated 2016 release, energy target & $+0.005$ & [$-0.006$, $+0.016$] & 0.328 & not significant \\
+P8 & As-of minus snapshot attributes, energy target & $+0.007$ & [$-0.003$, $+0.018$] & 0.328 & not significant \\
+\bottomrule
+\end{tabular}

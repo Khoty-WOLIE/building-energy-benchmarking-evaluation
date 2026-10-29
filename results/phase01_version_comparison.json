@@ -1,0 +1,102 @@
+{
+  "rows_original_2016": 3376,
+  "rows_consolidated_2016": 3253,
+  "matched_on_OSEBuildingID": 3194,
+  "only_in_original": 182,
+  "only_in_consolidated": 59,
+  "fields": {
+    "PropertyGFATotal": {
+      "n_compared": 3194,
+      "share_different": 0.0949,
+      "missing_orig": 0,
+      "missing_cons": 0
+    },
+    "NumberofFloors": {
+      "n_compared": 3194,
+      "share_different": 0.0047,
+      "missing_orig": 0,
+      "missing_cons": 0
+    },
+    "NumberofBuildings": {
+      "n_compared": 3187,
+      "share_different": 0.0631,
+      "missing_orig": 7,
+      "missing_cons": 0
+    },
+    "YearBuilt": {
+      "n_compared": 3194,
+      "share_different": 0.0013,
+      "missing_orig": 0,
+      "missing_cons": 0
+    },
+    "PropertyGFAParking": {
+      "n_compared": 3194,
+      "share_different": 0.1816,
+      "missing_orig": 0,
+      "missing_cons": 0
+    },
+    "LargestPropertyUseTypeGFA": {
+      "n_compared": 3175,
+      "share_different": 0.0173,
+      "missing_orig": 19,
+      "missing_cons": 0
+    },
+    "ENERGYSTARScore": {
+      "n_compared": 2415,
+      "share_different": 0.0435,
+      "missing_orig": 772,
+      "missing_cons": 762
+    },
+    "SiteEnergyUse(kBtu)": {
+      "n_compared": 3178,
+      "share_different": 0.0192,
+      "missing_orig": 4,
+      "missing_cons": 15
+    },
+    "TotalGHGEmissions": {
+      "n_compared": 3179,
+      "share_different": 0.9044,
+      "missing_orig": 8,
+      "missing_cons": 10
+    },
+    "BuildingType": {
+      "n_compared": 3194,
+      "share_different": 0.0961,
+      "missing_orig": 0,
+      "missing_cons": 0
+    }
+  },
+  "TotalGHGEmissions_ratio_consolidated_over_original_quantiles": {
+    "0.05": 0.825,
+    "0.25": 0.833,
+    "0.5": 0.945,
+    "0.75": 0.978,
+    "0.95": 0.994
+  },
+  "PropertyGFATotal_ratio_among_changed_quantiles": {
+    "0.05": 0.631,
+    "0.5": 1.094,
+    "0.95": 2.192
+  },
+  "BuildingType_transitions": {
+    "SPS-District K-12 -> School": 88,
+    "Nonresidential COS -> NonResidential": 65,
+    "NonResidential -> Hospital": 50,
+    "NonResidential -> School": 33,
+    "NonResidential -> Multifamily LR (1-4)": 15,
+    "Campus -> NonResidential": 13,
+    "NonResidential -> University": 12,
+    "NonResidential -> Multifamily MR (5-9)": 6,
+    "Campus -> University": 6,
+    "Campus -> School": 4,
+    "NonResidential -> Multifamily HR (10+)": 3,
+    "Multifamily MR (5-9) -> University": 3,
+    "Multifamily LR (1-4) -> NonResidential": 2,
+    "Multifamily LR (1-4) -> University": 2,
+    "Campus -> Hospital": 1,
+    "Multifamily MR (5-9) -> NonResidential": 1,
+    "Multifamily LR (1-4) -> Multifamily HR (10+)": 1,
+    "Multifamily HR (10+) -> NonResidential": 1,
+    "Nonresidential COS -> Multifamily LR (1-4)": 1
+  }
+}

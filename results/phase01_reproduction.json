@@ -1,0 +1,263 @@
+{
+  "checks": [
+    {
+      "check": "raw_shape",
+      "observed": [
+        3376,
+        46
+      ],
+      "expected_in_notebook": [
+        3376,
+        46
+      ],
+      "match": true
+    },
+    {
+      "check": "cell19_zero_consumption_rows",
+      "observed": 12,
+      "expected_in_notebook": 12,
+      "match": true
+    },
+    {
+      "check": "cell51_city_flagged_outliers",
+      "observed": 16,
+      "expected_in_notebook": 16,
+      "match": true
+    },
+    {
+      "check": "cell53_default_data_rows",
+      "observed": 85,
+      "expected_in_notebook": 85,
+      "match": true
+    },
+    {
+      "check": "cell56_rows_after_default_filter",
+      "observed": 1535,
+      "expected_in_notebook": 1535,
+      "match": true
+    },
+    {
+      "check": "cell109_rows_before_target_outliers",
+      "observed": 1520,
+      "expected_in_notebook": 1520,
+      "match": true
+    },
+    {
+      "check": "cell124_outliers_SiteEnergyUse",
+      "observed": 50,
+      "expected_in_notebook": 50,
+      "match": true
+    },
+    {
+      "check": "cell124_outliers_TotalGHGEmissions",
+      "observed": 18,
+      "expected_in_notebook": 18,
+      "match": true
+    },
+    {
+      "check": "final_rows",
+      "observed": 1452,
+      "expected_in_notebook": 1452,
+      "match": true
+    }
+  ],
+  "label_mapping_notebook_name_to_true_category": {
+    "BuildingType": {
+      "nonresidential": "campus",
+      "nonresidential cos": "nonresidential",
+      "sps-district k-12": "nonresidential cos",
+      "campus": "nonresidential wa",
+      "nonresidential wa": "sps-district k-12"
+    },
+    "PrimaryPropertyType": {
+      "hotel": "distribution center",
+      "other": "hospital",
+      "mixed use property": "hotel",
+      "university": "k-12 school",
+      "small- and mid-sized office": "laboratory",
+      "self-storage facility": "large office",
+      "k-12 school": "medical office",
+      "large office": "mixed use property",
+      "senior care community": "other",
+      "medical office": "refrigerated warehouse",
+      "retail store": "restaurant",
+      "warehouse": "retail store",
+      "distribution center": "self-storage facility",
+      "worship facility": "senior care community",
+      "supermarket / grocery store": "small- and mid-sized office",
+      "laboratory": "supermarket / grocery store",
+      "refrigerated warehouse": "university",
+      "restaurant": "warehouse",
+      "hospital": "worship facility"
+    }
+  },
+  "categories_silently_merged_into_reference": {
+    "BuildingType": [
+      "sps-district k-12"
+    ],
+    "PrimaryPropertyType": [
+      "warehouse",
+      "worship facility"
+    ]
+  },
+  "results": {
+    "SiteEnergyUse(kBtu)": {
+      "faithful_encoding": {
+        "n_features": 30,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.1702,
+          "R2_test_log": -0.0049,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 3709102.9
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.7965,
+          "R2_test_log": 0.5345,
+          "R2_train_log": 0.6105,
+          "MAE_test_kBtu_original_scale": 3218591.0
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.7977,
+          "R2_test_log": 0.5331,
+          "R2_train_log": 0.6102,
+          "MAE_test_kBtu_original_scale": 3229518.7
+        }
+      },
+      "true_labels_same_columns": {
+        "n_features": 30,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.1702,
+          "R2_test_log": -0.0049,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 3709102.9
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.7965,
+          "R2_test_log": 0.5345,
+          "R2_train_log": 0.6105,
+          "MAE_test_kBtu_original_scale": 3218591.0
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.7977,
+          "R2_test_log": 0.5331,
+          "R2_train_log": 0.6102,
+          "MAE_test_kBtu_original_scale": 3229518.7
+        }
+      },
+      "corrected_full_onehot": {
+        "n_features": 31,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.1702,
+          "R2_test_log": -0.0049,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 3709102.9
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.7956,
+          "R2_test_log": 0.5355,
+          "R2_train_log": 0.6108,
+          "MAE_test_kBtu_original_scale": 3203605.1
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.7972,
+          "R2_test_log": 0.5337,
+          "R2_train_log": 0.6104,
+          "MAE_test_kBtu_original_scale": 3224119.7
+        }
+      }
+    },
+    "TotalGHGEmissions": {
+      "faithful_encoding": {
+        "n_features": 30,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.2778,
+          "R2_test_log": -0.0004,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 77.1
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.8494,
+          "R2_test_log": 0.558,
+          "R2_train_log": 0.6222,
+          "MAE_test_kBtu_original_scale": 66.7
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.8508,
+          "R2_test_log": 0.5564,
+          "R2_train_log": 0.6214,
+          "MAE_test_kBtu_original_scale": 66.6
+        }
+      },
+      "true_labels_same_columns": {
+        "n_features": 30,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.2778,
+          "R2_test_log": -0.0004,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 77.1
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.8494,
+          "R2_test_log": 0.558,
+          "R2_train_log": 0.6222,
+          "MAE_test_kBtu_original_scale": 66.7
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.8508,
+          "R2_test_log": 0.5564,
+          "R2_train_log": 0.6214,
+          "MAE_test_kBtu_original_scale": 66.6
+        }
+      },
+      "corrected_full_onehot": {
+        "n_features": 31,
+        "n_train": 1016,
+        "n_test": 436,
+        "Dummy": {
+          "RMSE_test_log": 1.2778,
+          "R2_test_log": -0.0004,
+          "R2_train_log": 0.0,
+          "MAE_test_kBtu_original_scale": 77.1
+        },
+        "LinearRegression": {
+          "RMSE_test_log": 0.8496,
+          "R2_test_log": 0.5577,
+          "R2_train_log": 0.6232,
+          "MAE_test_kBtu_original_scale": 67.0
+        },
+        "Ridge(GridSearchCV)": {
+          "RMSE_test_log": 0.851,
+          "R2_test_log": 0.5563,
+          "R2_train_log": 0.6223,
+          "MAE_test_kBtu_original_scale": 67.1
+        }
+      }
+    }
+  },
+  "notebook_recorded_SiteEnergyUse": {
+    "Dummy": {
+      "RMSE_test": 1.17,
+      "R2_test": -0.0049
+    },
+    "LinearRegression": {
+      "RMSE_test": 0.8,
+      "R2_test": 0.5345,
+      "R2_train": 0.6105
+    },
+    "Ridge": {
+      "RMSE_test": 0.8,
+      "R2_test": 0.5331,
+      "R2_train": 0.6102
+    }
+  }
+}

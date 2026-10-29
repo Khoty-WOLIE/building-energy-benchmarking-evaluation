@@ -1,0 +1,17 @@
+\begin{tabular}{llcccccc}
+\toprule
+ & & \multicolumn{3}{c}{Forward temporal (S3)} & \multicolumn{3}{c}{Unseen buildings + future (S4)} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Tier & Model & $h=1$ & $h=2$ & $h=3$ & $h=1$ & $h=2$ & $h=3$ \\
+\midrule
+T0 & Median by type & 0.909 & 0.916 & 0.923 & 0.922 & 0.929 & 0.938 \\
+T0 & Ridge & 0.510 & 0.519 & 0.530 & 0.519 & 0.527 & 0.538 \\
+T0 & Random forest & 0.284 & 0.320 & 0.354 & 0.539 & 0.546 & 0.556 \\
+T0 & Gradient boosting & 0.333 & 0.360 & 0.385 & 0.536 & 0.544 & 0.554 \\
+\midrule
+T1 & Persistence (last year) & 0.174 & 0.248 & 0.298 & 0.174 & 0.248 & 0.298 \\
+T1 & Ridge & 0.313 & 0.335 & 0.365 & 0.317 & 0.339 & 0.369 \\
+T1 & Random forest & 0.223 & 0.264 & 0.296 & 0.324 & 0.341 & 0.358 \\
+T1 & Gradient boosting & 0.244 & 0.278 & 0.308 & 0.338 & 0.355 & 0.375 \\
+\bottomrule
+\end{tabular}

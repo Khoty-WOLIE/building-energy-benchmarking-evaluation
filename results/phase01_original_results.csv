@@ -1,0 +1,24 @@
+notebook,cell_index,target,with_energystar,model,tuning,RMSE_test_log1p,R2_test_log1p,R2_train_log1p,n_train,n_test,status
+NB1,220,SiteEnergyUse,no,Random uniform int,none,2.84,-4.9169,-5.4743,1016,436,recorded (unseeded; not reproducible)
+NB1,221,SiteEnergyUse,no,Dummy(mean),none,1.17,-0.0049,0.0,1016,436,recorded + REPRODUCED exactly
+NB1,223,SiteEnergyUse,no,Ridge,GridSearchCV alpha 50 values cv=5,0.80,0.5331,0.6102,1016,436,recorded + REPRODUCED exactly
+NB1,225,SiteEnergyUse,no,Lasso,GridSearchCV cv=5,0.80,0.5324,0.6098,1016,436,recorded
+NB1,227,SiteEnergyUse,no,ElasticNet,GridSearchCV 1000 combos cv=5,0.80,0.5328,0.61,1016,436,recorded
+NB1,229,SiteEnergyUse,no,LinearRegression,none,0.80,0.5345,0.6105,1016,436,recorded + REPRODUCED exactly
+NB1,231,SiteEnergyUse,no,DecisionTree,max_depth 2-14 cv=5,0.83,0.4935,0.621,1016,436,recorded
+NB1,233,SiteEnergyUse,no,KNN,k 2-19 x weights cv=5,0.79,0.5465,1.0,1016,436,recorded (train R2=1: distance weights)
+NB1,235,SiteEnergyUse,no,RandomForest,max_depth 2-9 x n_est 100-1000 cv=5,0.74,0.5978,0.8321,1016,436,recorded (no random_state)
+NB1,237,SiteEnergyUse,no,SVR(rbf),C x gamma 24 combos cv=5,0.70,0.6359,0.7348,1016,436,recorded
+NB1,239,SiteEnergyUse,no,XGBoost,max_depth 2-4 x n_est 100-1000 cv=5,0.70,0.6433,0.7815,1016,436,recorded
+NB2,21,SiteEnergyUse,no,SVR(rbf),same grid,0.70,0.6359,0.7348,1016,436,recorded
+NB2,23,SiteEnergyUse,no,XGBoost,same grid,0.70,0.6433,0.7815,1016,436,recorded
+NB2,25,SiteEnergyUse,no,RandomForest,same grid,0.74,0.5977,0.8332,1016,436,recorded (differs from NB1 run: nondeterministic)
+NB2,40,SiteEnergyUse,yes,SVR(rbf),same grid,0.67,0.6673,0.7947,1016,436,recorded
+NB2,42,SiteEnergyUse,yes,XGBoost,same grid,0.63,0.7074,0.8604,1016,436,recorded
+NB2,44,SiteEnergyUse,yes,RandomForest,same grid,0.69,0.6476,0.8634,1016,436,recorded
+NB3,21,TotalGHGEmissions,no,SVR(rbf),same grid,0.79,0.6146,0.7233,1016,436,recorded
+NB3,23,TotalGHGEmissions,no,XGBoost,same grid,0.80,0.6054,0.7635,1016,436,recorded
+NB3,25,TotalGHGEmissions,no,RandomForest,same grid,0.80,0.6081,0.8237,1016,436,recorded
+NB3,40,TotalGHGEmissions,yes,SVR(rbf),same grid,0.77,0.636,0.7636,1016,436,recorded
+NB3,42,TotalGHGEmissions,yes,XGBoost,same grid,0.75,0.6538,0.7972,1016,436,recorded
+NB3,44,TotalGHGEmissions,yes,RandomForest,same grid,0.79,0.6222,0.8496,1016,436,recorded
