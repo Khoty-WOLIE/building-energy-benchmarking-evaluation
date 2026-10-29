@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these results, please cite the preprint."
 title: "Within-Building Dependence, Target Leakage and Data Vintages in Building Energy Prediction from Public Benchmarking Data"
 authors:
-  - family-names: "WOLIE"
+  - family-names: "Wolie"
     given-names: "Khoty"
     affiliation: "Independent researcher"
     email: "khotywolie@gmail.com"
