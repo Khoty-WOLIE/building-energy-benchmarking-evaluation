@@ -2,7 +2,7 @@
 
 Code, results and LaTeX source of the preprint
 
-> Khoty WOLIE (2026). *Within-Building Dependence, Target Leakage and Data Vintages in Building Energy Prediction
+> Khoty Wolie (2026). *Within-Building Dependence, Target Leakage and Data Vintages in Building Energy Prediction
 > from Public Benchmarking Data. Evidence from Seattle, 2015 to 2025.* arXiv preprint (identifier added once announced).
 
 The study analyses Seattle's non-residential building energy benchmarking panel (15,621 building-years, 1,667

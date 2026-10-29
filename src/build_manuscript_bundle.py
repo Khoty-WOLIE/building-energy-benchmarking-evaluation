@@ -23,6 +23,8 @@ def main():
     OUT.mkdir(exist_ok=True)
     files = [MS / "main.tex", MS / "references.bib"] + sorted((MS / "tables").glob("*.tex")) + \
         sorted((MS / "figures").glob("*.pdf"))
+    if (MS / "main.bbl").exists():           # arXiv uses a pre-built .bbl named like the main .tex when present
+        files.append(MS / "main.bbl")
     zpath = OUT / "article01_seattle_manuscript_source.zip"
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
         for f in files:
