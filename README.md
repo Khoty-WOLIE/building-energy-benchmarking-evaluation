@@ -65,9 +65,7 @@ All experiments take about 75 minutes on a 24-core CPU.
 
 ## Acknowledgements
 
-The author used generative AI tools as research assistants, for literature searches, programming support and text
-editing. The author designed the study, made all scientific decisions, verified the results and takes full
-responsibility for the content.
+The author used generative AI assistance during this research, verified all results and takes full responsibility for the content.
 
 ## License
 
