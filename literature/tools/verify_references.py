@@ -100,7 +100,7 @@ def latex_safe(bib):
     """Make Crossref BibTeX compile: decode HTML entities, escape bare '&', normalise Unicode dashes."""
     bib = html.unescape(bib)
     bib = re.sub(r"(?<!\\)&", r"\\&", bib)
-    bib = bib.replace("–", "--").replace("—", "--").replace("‐", "-").replace("‑", "-")
+    bib = bib.replace("\u2013", "--").replace("\u2014", "--").replace("\u2010", "-").replace("\u2011", "-")
     # Keep the publisher's capitalisation (acronyms, place names): BibTeX styles lower-case unprotected titles.
     bib = re.sub(r"title=\{(?!\{)(.*?)\}, (?=\w+=)", lambda m: "title={{" + m.group(1) + "}}, ", bib, count=1)
     # The DOI already identifies the work: drop the redundant dx.doi.org URL and the ISSN.
