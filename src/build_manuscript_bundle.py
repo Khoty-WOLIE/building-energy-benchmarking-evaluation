@@ -3,6 +3,7 @@
 Usage (from article-01-seattle/):
     python src/build_manuscript_bundle.py
 """
+import re
 import shutil
 import subprocess
 import sys
@@ -43,6 +44,12 @@ def main():
                     out_name="article01_seattle_preprint_FR_lecture.pdf", keep_bbl=False)
 
 
+def plain_hyphens(bbl):
+    """Typographic choice: plain hyphens in the bibliography; URLs and DOIs are left as they are."""
+    parts = re.split(r"(\\(?:url|doi|href)\{[^}]*\})", bbl.read_text(encoding="utf-8"))
+    bbl.write_text("".join(p if i % 2 else p.replace("--", "-") for i, p in enumerate(parts)), encoding="utf-8")
+
+
 def find_tex_bin():
     """Locate a pdflatex installation (PATH first, then a per-user MiKTeX install)."""
     hit = shutil.which("pdflatex")
@@ -72,6 +79,8 @@ def compile_pdf(files, tex_name="main", out_name="article01_seattle_preprint.pdf
         if r.returncode != 0:
             print(r.stdout[-3000:])
             raise SystemExit(f"{cmd[0]} failed")
+        if cmd[0] == "bibtex":
+            plain_hyphens(work / f"{tex_name}.bbl")
     log = (work / f"{tex_name}.log").read_text(encoding="utf-8", errors="replace")
     warnings = [l for l in log.splitlines() if "Warning" in l and ("undefined" in l or "Overfull" in l or "multiply" in l)]
     overfull = [l for l in log.splitlines() if l.startswith("Overfull")]

@@ -10,7 +10,7 @@ Kadir Amasyali and Nora~M. El-Gohary.
 \newblock {A review of data-driven building energy consumption prediction
   studies}.
 \newblock \emph{Renewable and Sustainable Energy Reviews}, 81:\penalty0
-  1192--1205, January 2018.
+  1192-1205, January 2018.
 \newblock \doi{10.1016/j.rser.2017.04.095}.
 
 \bibitem[Arjunan et~al.(2020)Arjunan, Poolla, and
@@ -31,7 +31,7 @@ Pandarasamy Arjunan, Kameshwar Poolla, and Clayton Miller.
 Christoph Bergmeir and José~M. Benítez.
 \newblock {On the use of cross-validation for time series predictor
   evaluation}.
-\newblock \emph{Information Sciences}, 191:\penalty0 192--213, May 2012.
+\newblock \emph{Information Sciences}, 191:\penalty0 192-213, May 2012.
 \newblock \doi{10.1016/j.ins.2011.12.028}.
 
 \bibitem[{City of Seattle Office of Sustainability and
@@ -48,7 +48,7 @@ Christoph Bergmeir and José~M. Benítez.
 \bibitem[{City of Seattle Office of Sustainability and
   Environment}(2026)]{seattle2026benchmarking}
 {City of Seattle Office of Sustainability and Environment}.
-\newblock {Building Energy Benchmarking Data, 2015--Present (dataset
+\newblock {Building Energy Benchmarking Data, 2015-Present (dataset
   teqw-tu6e)}, 2026.
 \newblock URL
   \url{https://data.seattle.gov/Built-Environment/Building-Energy-Benchmarking-Data-2015-Present/teqw-tu6e}.
@@ -58,7 +58,7 @@ Christoph Bergmeir and José~M. Benítez.
 \bibitem[Croushore and Stark(2001)]{croushore2001realtime}
 Dean Croushore and Tom Stark.
 \newblock {A real-time data set for macroeconomists}.
-\newblock \emph{Journal of Econometrics}, 105\penalty0 (1):\penalty0 111--130,
+\newblock \emph{Journal of Econometrics}, 105\penalty0 (1):\penalty0 111-130,
   November 2001.
 \newblock \doi{10.1016/s0304-4076(01)00072-0}.
 
@@ -66,7 +66,7 @@ Dean Croushore and Tom Stark.
 Naihua Duan.
 \newblock {Smearing Estimate: A Nonparametric Retransformation Method}.
 \newblock \emph{Journal of the American Statistical Association}, 78\penalty0
-  (383):\penalty0 605--610, 1983.
+  (383):\penalty0 605-610, 1983.
 \newblock \doi{10.1080/01621459.1983.10478017}.
 
 \bibitem[Duan et~al.(2026)Duan, Zheng, Li, Xue, and Salim]{duan2026ghgbench}
@@ -79,7 +79,7 @@ Yifan Duan, Siyuan Zheng, Lihuan Li, Chao Xue, and Flora Salim.
 C.~A. Field and A.~H. Welsh.
 \newblock {Bootstrapping Clustered Data}.
 \newblock \emph{Journal of the Royal Statistical Society Series B: Statistical
-  Methodology}, 69\penalty0 (3):\penalty0 369--390, May 2007.
+  Methodology}, 69\penalty0 (3):\penalty0 369-390, May 2007.
 \newblock \doi{10.1111/j.1467-9868.2007.00593.x}.
 
 \bibitem[Gebru et~al.(2021)Gebru, Morgenstern, Vecchione, Vaughan, Wallach,
@@ -87,7 +87,7 @@ C.~A. Field and A.~H. Welsh.
 Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer~Wortman Vaughan,
   Hanna Wallach, Hal~Daumé III, and Kate Crawford.
 \newblock {Datasheets for datasets}.
-\newblock \emph{Communications of the ACM}, 64\penalty0 (12):\penalty0 86--92,
+\newblock \emph{Communications of the ACM}, 64\penalty0 (12):\penalty0 86-92,
   November 2021.
 \newblock \doi{10.1145/3458723}.
 
@@ -95,7 +95,7 @@ Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer~Wortman Vaughan,
 David Hsu.
 \newblock {Improving energy benchmarking with self-reported data}.
 \newblock \emph{Building Research \& Information}, 42\penalty0 (5):\penalty0
-  641--656, February 2014.
+  641-656, February 2014.
 \newblock \doi{10.1080/09613218.2014.887612}.
 
 \bibitem[Kapoor and Narayanan(2023)]{kapoor2023leakage}
@@ -110,14 +110,14 @@ Sayash Kapoor and Arvind Narayanan.
 Shachar Kaufman, Saharon Rosset, Claudia Perlich, and Ori Stitelman.
 \newblock {Leakage in data mining: Formulation, detection, and avoidance}.
 \newblock \emph{ACM Transactions on Knowledge Discovery from Data}, 6\penalty0
-  (4):\penalty0 1--21, December 2012.
+  (4):\penalty0 1-21, December 2012.
 \newblock \doi{10.1145/2382577.2382579}.
 
 \bibitem[Kontokosta and Tull(2017)]{kontokosta2017citywide}
 Constantine~E. Kontokosta and Christopher Tull.
 \newblock {A data-driven predictive model of city-scale energy use in
   buildings}.
-\newblock \emph{Applied Energy}, 197:\penalty0 303--317, 2017.
+\newblock \emph{Applied Energy}, 197:\penalty0 303-317, 2017.
 \newblock \doi{10.1016/j.apenergy.2017.04.005}.
 
 \bibitem[Li et~al.(2024)Li, Liu, Sawyer, Tang, Loftness, Lu, and
@@ -141,7 +141,7 @@ Yue Pan and Limao Zhang.
 Sokratis Papadopoulos and Constantine~E. Kontokosta.
 \newblock {Grading buildings on energy performance using city benchmarking
   data}.
-\newblock \emph{Applied Energy}, 233-234:\penalty0 244--253, January 2019.
+\newblock \emph{Applied Energy}, 233-234:\penalty0 244-253, January 2019.
 \newblock \doi{10.1016/j.apenergy.2018.10.053}.
 
 \bibitem[Papadopoulos et~al.(2018)Papadopoulos, Bonczak, and
@@ -149,7 +149,7 @@ Sokratis Papadopoulos and Constantine~E. Kontokosta.
 Sokratis Papadopoulos, Bartosz Bonczak, and Constantine~E. Kontokosta.
 \newblock {Pattern recognition in building energy performance over time using
   energy benchmarking data}.
-\newblock \emph{Applied Energy}, 221:\penalty0 576--586, 2018.
+\newblock \emph{Applied Energy}, 221:\penalty0 576-586, 2018.
 \newblock \doi{10.1016/j.apenergy.2018.03.079}.
 
 \bibitem[Roberts et~al.(2017)Roberts, Bahn, Ciuti, Boyce, Elith,
@@ -161,7 +161,7 @@ David~R. Roberts, Volker Bahn, Simone Ciuti, Mark~S. Boyce, Jane Elith,
   Hartig, and Carsten~F. Dormann.
 \newblock {Cross-validation strategies for data with temporal, spatial,
   hierarchical, or phylogenetic structure}.
-\newblock \emph{Ecography}, 40\penalty0 (8):\penalty0 913--929, March 2017.
+\newblock \emph{Ecography}, 40\penalty0 (8):\penalty0 913-929, March 2017.
 \newblock \doi{10.1111/ecog.02881}.
 
 \bibitem[Robinson et~al.(2017)Robinson, Dilkina, Hubbs, Zhang, Guhathakurta,
@@ -170,7 +170,7 @@ Caleb Robinson, Bistra Dilkina, Jeffrey Hubbs, Wenwen Zhang, Subhrajit
   Guhathakurta, Marilyn~A. Brown, and Ram~M. Pendyala.
 \newblock {Machine learning approaches for estimating commercial building
   energy consumption}.
-\newblock \emph{Applied Energy}, 208:\penalty0 889--904, December 2017.
+\newblock \emph{Applied Energy}, 208:\penalty0 889-904, December 2017.
 \newblock \doi{10.1016/j.apenergy.2017.09.060}.
 
 \bibitem[Roth(2026)]{roth2026leakagetypes}
@@ -211,7 +211,7 @@ Amanda Worthy, Mehdi Ashayeri, and Narjes Abbasabadi.
 \bibitem[Yap et~al.(2025)Yap, Wu, Miller, and Biljecki]{yap2025revealing}
 Winston Yap, Abraham~Noah Wu, Clayton Miller, and Filip Biljecki.
 \newblock {Revealing building operating carbon dynamics for multiple cities}.
-\newblock \emph{Nature Sustainability}, 8\penalty0 (10):\penalty0 1199--1210,
+\newblock \emph{Nature Sustainability}, 8\penalty0 (10):\penalty0 1199-1210,
   August 2025.
 \newblock \doi{10.1038/s41893-025-01615-8}.
 
